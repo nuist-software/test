@@ -55,5 +55,9 @@ spring:
           # 配置开启自动更新表结构
           auto: update
 
+<<<<<<< HEAD
   file.temppath: E:/
+=======
+  file.temppath: D:/
+>>>>>>> a7a530f01556a76c37fc3d841bf315bb56a50e21
 

@@ -1,34 +1,35 @@
 package edu.nuist.qdb.control;
 
+//<<<<<<< HEAD
 import com.alibaba.fastjson.JSONObject;
 import edu.nuist.qdb.entity.question.Question;
 import edu.nuist.qdb.entity.question.QuestionAssemblor;
 import edu.nuist.qdb.entity.question.QuestionService;
-import edu.nuist.qdb.service.ajax.result.Result;
-import edu.nuist.qdb.service.ajax.result.ResultMessage;
 import edu.nuist.qdb.util.FileUploader;
 import edu.nuist.qdb.xlsutil.Cell;
 import edu.nuist.qdb.xlsutil.XLSReader;
-import javassist.runtime.Inner;
-import org.apache.xmlbeans.impl.xb.xsdschema.All;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.nio.file.FileStore;
-import java.security.PrivateKey;
 import java.util.LinkedList;
 import java.util.List;
 @CrossOrigin
+//=======
+//import edu.nuist.qdb.service.ajax.result.ResultMessage;
+//import edu.nuist.qdb.util.FileUploader;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.multipart.MultipartFile;
+//
+//>>>>>>> a7a530f01556a76c37fc3d841bf315bb56a50e21
 @RestController
 public class FileController {
     @Autowired
     private FileUploader fileUploader;
+//<<<<<<< HEAD
     @Autowired
     private QuestionService questionService;
 
@@ -80,3 +81,11 @@ public class FileController {
 
     }
 
+//=======
+
+//    @PostMapping("/upload")
+//    public ResultMessage upload(@RequestParam MultipartFile file) {
+//        return fileUploader.singel(file, "xlshaha", "all");
+//    }
+//}
+//>>>>>>> a7a530f01556a76c37fc3d841bf315bb56a50e21

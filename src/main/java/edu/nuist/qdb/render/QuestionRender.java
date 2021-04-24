@@ -34,7 +34,11 @@ public class QuestionRender {
     @GetMapping("/batchsave")
     public List<Question> batchSave() throws Exception {
         QuestionAssemblor qAssemblor = new QuestionAssemblor();
+//<<<<<<< HEAD
         XLSReader rr = new XLSReader("e:/testwzj.xls");
+//=======
+//        XLSReader rr = new XLSReader("d:/testwzj.xls");
+//>>>>>>> a7a530f01556a76c37fc3d841bf315bb56a50e21
             List<List<Cell>> table = rr.read(0);
             List<Question> questions = new LinkedList<>();
 
